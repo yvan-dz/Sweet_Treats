@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Delight Bakery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Sweet Delight</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content" data-aos="fade-up">
+            <h1>Your Sweetest Moments Await</h1>
+            <p>Indulge in exquisite cakes crafted with love and perfection.</p>
+            <a href="#menu" class="btn btn-primary">Discover Our Creations</a>
+        </div>
+        <div class="scroll-down">
+            <a href="#about"><i class="fas fa-angle-down"></i></a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 data-aos="fade-right">About Sweet Delight</h2>
+            <div class="row">
+                <div class="col-md-6" data-aos="fade-right" data-aos-delay="100">
+                    <p>At Sweet Delight Bakery, we pour our heart into every cake we create. From the first bite to the last crumb, our cakes are made to bring joy to every occasion. Using only the finest ingredients, we ensure every creation is as delightful as it is beautiful.</p>
+                </div>
+                <div class="col-md-6 text-center" data-aos="fade-left" data-aos-delay="200">
+                    <img src="https://via.placeholder.com/500x400" class="img-fluid rounded shadow" alt="Bakery Image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <h2 data-aos="fade-up">Our Signature Cakes</h2>
+            <div class="row">
+                <div class="col-md-4" data-aos="zoom-in">
+                    <div class="menu-item">
+                        <img src="https://via.placeholder.com/300" class="img-fluid" alt="Chocolate Cake">
+                        <h5>Chocolate Symphony</h5>
+                        <p class="description">A decadent chocolate experience with a hint of espresso.</p>
+                        <span>$30.99</span>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="menu-item">
+                        <img src="https://via.placeholder.com/300" class="img-fluid" alt="Vanilla Cake">
+                        <h5>Vanilla Velvet</h5>
+                        <p class="description">Smooth vanilla cake with layers of rich buttercream.</p>
+                        <span>$28.99</span>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="menu-item">
+                        <img src="https://via.placeholder.com/300" class="img-fluid" alt="Red Velvet Cake">
+                        <h5>Red Velvet Bliss</h5>
+                        <p class="description">Classic red velvet with a creamy white chocolate filling.</p>
+                        <span>$32.99</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Gallery Section -->
+<section id="gallery" class="gallery-section">
+    <div class="container">
+        <h2 data-aos="fade-up">Our Creations</h2>
+        <div id="initialGalleryRow" class="row">
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/600x400" class="img-fluid rounded" alt="Cake 1" onclick="openModal(0)">
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/600x400" class="img-fluid rounded" alt="Cake 2" onclick="openModal(1)">
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/600x400" class="img-fluid rounded" alt="Cake 3" onclick="openModal(2)">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="gallery-grid additional-gallery" style="display: none;">
+        <div class="gallery-item">
+            <img src="https://via.placeholder.com/600x400" class="img-fluid" alt="Gallery Image 1" onclick="openModal(3)">
+        </div>
+        <div class="gallery-item">
+            <img src="https://via.placeholder.com/600x400" class="img-fluid" alt="Gallery Image 2" onclick="openModal(4)">
+        </div>
+        <div class="gallery-item">
+            <img src="https://via.placeholder.com/600x400" class="img-fluid" alt="Gallery Image 2" onclick="openModal(5)">
+        </div>
+        <div class="gallery-item">
+            <img src="https://via.placeholder.com/600x400" class="img-fluid" alt="Gallery Image 2" onclick="openModal(6)">
+        </div>
+        <div class="gallery-item">
+            <img src="https://via.placeholder.com/600x400" class="img-fluid" alt="Gallery Image 2" onclick="openModal(7)">
+        </div>
+        <div class="gallery-item">
+            <img src="https://via.placeholder.com/600x400" class="img-fluid" alt="Gallery Image 2" onclick="openModal(8)">
+        </div>
+        <div class="gallery-item">
+            <img src="https://via.placeholder.com/600x400" class="img-fluid" alt="Gallery Image 2" onclick="openModal(9)">
+        </div>
+        <div class="gallery-item">
+            <img src="https://via.placeholder.com/600x400" class="img-fluid" alt="Gallery Image 2" onclick="openModal(10)">
+        </div>
+        <!-- Additional gallery items with onclick="openModal(index)" -->
+    </div>
+    
+    <div class="text-center mt-4">
+        <button id="toggleGalleryButton" onclick="toggleGallery()">Voir toutes les photos</button>
+    </div>
+</section>
+
+<!-- Image Modal -->
+<div id="imageModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImage">
+    <div class="modal-caption" id="caption"></div>
+    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+</div>
+
+
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <h2 data-aos="fade-up">Client Testimonials</h2>
+            <div class="row">
+                <div class="col-md-6" data-aos="fade-right">
+                    <div class="testimonial-item">
+                        <p>"The most amazing cakes! Sweet Delight truly lives up to its name. Every bite was pure joy."</p>
+                        <div class="author">- Grace W.</div>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-left">
+                    <div class="testimonial-item">
+                        <p>"Our custom wedding cake was beyond beautiful and tasted just as incredible. Thank you, Sweet Delight!"</p>
+                        <div class="author">- Jennifer & Mark B.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 data-aos="fade-up">Contact Us</h2>
+            <p data-aos="fade-up" data-aos-delay="100">We'd love to hear from you! Whether it's an inquiry or a custom order, we're here to help make your day sweeter.</p>
+            <form data-aos="fade-up" data-aos-delay="200">
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Your Name">
+                </div>
+                <div class="mb-3">
+                    <input type="email" class="form-control" placeholder="Your Email">
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" rows="4" placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Sweet Delight Bakery. All rights reserved.</p>
+        <p>Designed by <a href="https://github.com/yvan-dz" target="_blank">Yvan Dzefak</a></p>
+    </footer>
+
+    <!-- Bootstrap JS, AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="scripts.js"></script>
+    
+</body>
+</html>
